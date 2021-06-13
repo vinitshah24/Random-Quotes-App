@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<style>
+    .blockquote-custom {
+        position: relative;
+        font-size: 1.1rem;
+    }
+
+    .blockquote-custom-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -25px;
+        left: 50px;
+    }
+
+    body {
+        background: #eff0eb;
+        background-image: url('https://i.postimg.cc/MTbfnkj6/bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Quote</title>
+</head>
+
+<body>
+    <section class="py-5">
+        <div class="container">
+            <!-- FOR DEMO PURPOSE -->
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <header class="text-center pb-5">
+                        <h1 class="h2"></h1>
+                    </header>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+
+                        <div class="blockquote-custom-icon bg-info shadow-sm">
+                            <i class="fa fa-quote-left" style="color:white;"></i>
+                        </div>
+                        <p class="mb-0 mt-2 font-italic">
+                            <center>{{ quote }}</center>
+                        </p>
+                        <footer class="blockquote-footer pt-4 mt-4 border-top">
+                            <cite title="Source Title">{{ author }}</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
